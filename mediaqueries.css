@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    height: auto;
+    margin-bottom: 2rem;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -25,42 +25,43 @@
   }
   #profile,
   .section-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .arrow {
     display: none;
   }
   section,
   .section-container {
-    height: fit-content;
+    height: auto;
   }
   section {
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
   }
   .about-containers {
-    margin-top: 0;
+    margin-top: 2rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: auto;
   }
   #profile {
-    height: 83vh;
+    height: auto;
     margin-bottom: 0;
   }
   article {
     font-size: 1rem;
   }
   footer nav {
-    height: fit-content;
+    height: auto;
     margin-bottom: 2rem;
   }
   .about-containers,
@@ -87,8 +88,13 @@
     text-align: center;
   }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+  .section__pic-container img {
+    width: 100%;
+    height: auto;
     justify-content: center;
   }
   .section__text__p2 {
